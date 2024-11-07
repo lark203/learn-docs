@@ -11,7 +11,7 @@ copy * /home/app
 WORKDIR /home/app
 
 # 安装依赖包
-# RUN npm --registry http://mirrors.cloud.tencent.com/npm/ install
+RUN npm --registry http://mirrors.cloud.tencent.com/npm/ install
 
 # 暴露端口
 EXPOSE 9090
